@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Currency Converter</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <td>Amount</td>
+            <td>From</td>
+            <td>To</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="amount" id="amount" /></td>
+            <td>
+              <select name="fromCountries" id="fromCountries">
+                <option class="us" value="">United States - Dollar</option>
+                <option class="eur" value="">European Union - Euro</option>
+                <option class="gb" value="">Great Britain - Pound</option>
+                <option class="mxn" value="">Mexican - Peso</option>
+                <option class="cny" value="">Chinese - Yuan</option>
+                <option class="skw" value="">South Korean - Won</option>
+              </select>
+            </td>
+            <td>
+              <select name="fromCountries" id="toCountries">
+                <option class="us" value="">United States - Dollar</option>
+                <option class="eur" value="">European Union - Euro</option>
+                <option class="gb" value="">Great Britain - Pound</option>
+                <option class="mxn" value="">Mexican - Peso</option>
+                <option class="cny" value="">Chinese - Yuan</option>
+                <option class="skw" value="">South Korean - Won</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td id="displayConversion">This is blank for now...</td>
+            <td><button id="convert">Convert</button></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
